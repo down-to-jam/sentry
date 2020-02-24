@@ -49,6 +49,10 @@ TODO:
 ### Jan
 Completed:
 - Design overall web application's structure
+- Added ESLint to project
+- Created user/admin information structure
 
 TODO:
 - Implement security page for Admin accessing client's information
+- Implement information structure on database
+- Tie in database to web application
