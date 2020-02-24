@@ -4,7 +4,6 @@ import { Container, Card, Header, Loader, Grid, Icon, Segment, Divider } from 's
 import { Profiles } from '/imports/api/profile/StudentProfile';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import Profile from '../components/Profile';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class StudentHome extends React.Component {

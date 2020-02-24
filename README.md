@@ -37,11 +37,18 @@ TODO:
 ### Dylan
 Completed:
 - Create application logo
+- Fixed syntax errors on App.jsx
+- Fixed syntax errors on Admin.jsx
+- Fixed syntax errors on UserHome.jsx
 
 TODO:
+- Update layout design
+- Implement client's password page
+- Implement Admin's client accessibility page
 
 ### Jan
 Completed:
-- 
+- Design overall web application's structure
 
 TODO:
+- Implement security page for Admin accessing client's information

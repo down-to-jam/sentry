@@ -11,7 +11,6 @@ import ListStudent from '../pages/ListStudent';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import SignupStudent from '../pages/SignupStudent';
-import SignupCompany from '../pages/SignupCompany';
 import Signout from '../pages/Signout';
 import CompanyHome from '../pages/CompanyHome';
 import AddPosition from '../pages/AddPosition';
