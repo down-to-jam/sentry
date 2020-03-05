@@ -1,5 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Stuffs } from '../../api/stuff/Stuff.js';
+import { Accounts } from '../../api/account/Account.js';
 
 /* eslint-disable no-console */
 
