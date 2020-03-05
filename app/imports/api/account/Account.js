@@ -1,6 +1,7 @@
 import { Mongo } from 'meteor/mongo';
 import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
+import { Crypts } from '../crypt/Crypt';
 
 /** Define a Mongo collection to hold the data. */
 const Accounts = new Mongo.Collection('Accounts');
@@ -10,8 +11,8 @@ const AccountSchema = new SimpleSchema({
   first: String,
   last: String,
   email: String,
-  password: Number,
-  passwords: [Crypt], /* Every Account has an array of Crypts (passwords) */
+  password: String,
+  passwords: [Crypts], /* Every Account has an array of Crypts (passwords) */
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
