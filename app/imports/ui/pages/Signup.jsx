@@ -36,17 +36,18 @@ export default class Signup extends React.Component {
 
   /** Display the signup form. */
   render() {
+    const transparent={backgroundColor: 'transparent'}; 
     return (
       <div className="connect-background">
         <div className="page-layer">
           <Container>
-            <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
+            <Grid textAlign="center" verticalAlign="middle" centered columns={3}>
               <Grid.Column>
                 <Header as="h2" textAlign="center" inverted>
                   Register for a new Sentry account!
                 </Header>
                 <Form onSubmit={this.handleSubmit}>
-                  <Segment stacked>
+                  <Segment stacked style= {transparent} inverted size='large'>
                     <Form.Input
                         label="Email"
                         icon="user"
