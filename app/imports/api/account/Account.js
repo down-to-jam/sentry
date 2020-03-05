@@ -1,7 +1,7 @@
 import { Mongo } from 'meteor/mongo';
 import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
-import { Crypts } from '../crypt/Crypts';
+import { Crypts } from '../crypt/Crypt';
 
 /** Define a Mongo collection to hold the data. */
 const Accounts = new Mongo.Collection('Accounts');
