@@ -27,7 +27,7 @@ class App extends React.Component {
               <AdminProtectedRoute path="/adminhome" component={AdminHome}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route path="/signup" component={Signup}/>
-              <Route path="/userhome" component={UserHome}/>
+              <Route path="/home" component={UserHome}/>
               <Route component={NotFound}/>
             </Switch>
             <Footer/>
