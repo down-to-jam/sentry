@@ -16,7 +16,7 @@ class NavBar extends React.Component {
     return (
       <Menu style={menuStyle} attached="top" borderless inverted>
         <Menu.Item as={NavLink} activeClassName="" exact to={this.navLink}>
-          <Image src='/images/AlohaConnectLogo.png' size='small'/> 
+          <Image src='/images/sentry-logo.png' size='small'/> 
         </Menu.Item>
 
         {(this.props.profile === 'user') ? (

@@ -53,7 +53,8 @@ class Landing extends React.Component {
             <Grid textAlign="center" verticalAlign="middle" centered columns={1}>
               <Grid.Column>
                 {/* Need to Insert Company Logo later */}
-                <Image src='/public/images/Sentrywall.jpg'/>
+                <Image src='/images/sentry-logo-full.png' size='large'/>
+                {/* <Image src='/public/images/Sentrywall.jpg'/> */}
                 <Form onSubmit={this.handleSubmit}>
                   <Segment stacked>
                     <div style={text}>
