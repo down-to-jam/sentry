@@ -10,6 +10,7 @@ import Landing from '../pages/Landing';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signout from '../pages/Signout';
+import Signup from '../pages/Signup';
 import AdminHome from '../pages/AdminHome';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -24,6 +25,7 @@ class App extends React.Component {
               <Route path="/signin" component={Signin}/>
               <AdminProtectedRoute path="/adminhome" component={AdminHome}/>
               <ProtectedRoute path="/signout" component={Signout}/>
+              <Route path="/signup" component={Signup}/>
               <Route component={NotFound}/>
             </Switch>
             <Footer/>
