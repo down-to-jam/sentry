@@ -1,11 +1,8 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Card, Header, Loader } from 'semantic-ui-react';
-import { Positions } from '/imports/api/position/position';
-import { Profiles } from '/imports/api/profile/StudentProfile';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import PositionCardAdmin from '../components/PositionCardAdmin';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class AdminHome extends React.Component {
