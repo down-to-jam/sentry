@@ -5,7 +5,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
-class StudentHome extends React.Component {
+class UserHome extends React.Component {
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -47,7 +47,7 @@ class StudentHome extends React.Component {
 }
 
 /** Require an array of Stuff documents in the props. */
-StudentHome.propTypes = {
+UserHome.propTypes = {
   profiles: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
@@ -60,4 +60,4 @@ export default withTracker(() => {
     profiles: Profiles.find({}).fetch(),
     ready: subscription.ready(),
   };
-})(StudentHome);
+})(UserHome);
