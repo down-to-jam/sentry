@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
 
 .connect-background {
-    background: url('/images/sun.jpg') no-repeat center center fixed;
+    background: url('https://cdna.artstation.com/p/assets/images/images/013/003/800/large/gray-rogers-got-redkeep-bgart.jpg?1537578608') no-repeat center center fixed;
     background-size: cover; 
-    height: 700px;
+    height: 500px;
 }
 
 .layer {
