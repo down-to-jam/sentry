@@ -57,7 +57,7 @@ TODO:
 - Implement information structure on database
 - Tie in database to web application
 
-# (02/25/2020 - 03/015/2020)
+# (02/25/2020 - 03/15/2020)
 Updates and changes.
 
 ## Progress
@@ -96,11 +96,24 @@ TODO:
 Completed:
 - Fix sign up page
 - Edited User/Landing page
-- 
+- Initialized Adding a password page
+
 Current:
+- Continue to work on adding password page
+
 TODO:
+- Initialize a editing password page
+- Initialize a password listing page
+- Fix routing to UserHome page
 
 ### Jan
 Completed:
+- Fixed routing issues with other pages
+- Created database schema
+
 Current:
+- Continue to help update routing 
+
 TODO:
+- Work on password listing after initialization
+- Help with any possible errors that occurs when pushing to github

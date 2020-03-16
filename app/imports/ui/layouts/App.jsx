@@ -11,6 +11,7 @@ import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signout from '../pages/Signout';
 import Signup from '../pages/Signup';
+import AddPassword from'../pages/AddStuff';
 import AdminHome from '../pages/AdminHome';
 import UserHome from'../pages/UserHome';
 
@@ -26,6 +27,7 @@ class App extends React.Component {
               <Route path="/signin" component={Signin}/>
               <AdminProtectedRoute path="/adminhome" component={AdminHome}/>
               <ProtectedRoute path="/signout" component={Signout}/>
+              <ProtectedRoute path="/addstuff" component={AddPassword}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/home" component={UserHome}/>
               <Route component={NotFound}/>
