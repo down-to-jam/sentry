@@ -38,6 +38,7 @@ class Landing extends React.Component {
   }
 
   render() {
+    const transparent={backgroundColor: 'transparent'};
     const text = {textAlign: 'center', fontSize: '18px'};
     const links = {textAlign: 'center'};
     const { from } = this.props.location.state || { from: { pathname: `/${this.flag}home` } };
@@ -56,7 +57,7 @@ class Landing extends React.Component {
                 <Image src='/images/sentry-white.png' size='200px' centered/>
                 {/* <Image src='/public/images/Sentrywall.jpg'/> */}
                 <Form onSubmit={this.handleSubmit}>
-                  <Segment stacked>
+                  <Segment stacked style= {transparent} inverted size='large'>
                     <div style={text}>
                       Secure your passwords with ease!
                     </div>

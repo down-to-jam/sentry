@@ -43,6 +43,7 @@ export default class Signin extends React.Component {
 
   /** Render the signin form. */
   render() {
+    const transparent={backgroundColor: 'transparent'};
     const { from } = this.props.location.state || { from: { pathname: `/${this.flag}home` } };
     // if correct authentication, redirect to page instead of login screen
     if (this.state.redirectToReferer) {
@@ -53,13 +54,13 @@ export default class Signin extends React.Component {
       <div className="connect-background">
         <div className="page-layer">
           <Container>
-            <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
+            <Grid textAlign="center" verticalAlign="middle" centered columns={3}>
               <Grid.Column>
                 <Header as="h2" textAlign="center" inverted>
                   Login to your account
                 </Header>
                 <Form onSubmit={this.handleSubmit}>
-                  <Segment stacked>
+                  <Segment stacked style= {transparent} inverted size='large'>
                     <Form.Input
                         label="Email"
                         icon="user"

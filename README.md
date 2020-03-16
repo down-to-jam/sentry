@@ -94,6 +94,9 @@ TODO:
 
 ### Dylan
 Completed:
+- Fix sign up page
+- Edited User/Landing page
+- 
 Current:
 TODO:
 
