@@ -149,15 +149,17 @@ TODO:
 
 ### Dylan
 Completed:
+- Initialize a editing password page
+- Continue to work on adding password page
 
 Current:
+- Initialize a password listing page
 
 TODO:
-
+- Fix routing to UserHome page
 
 ### Jan
 Completed:
-
 
 Current:
 - Work on password listing after initialization
