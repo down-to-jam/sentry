@@ -117,3 +117,50 @@ Current:
 TODO:
 - Work on password listing after initialization
 - Help with any possible errors that occurs when pushing to github
+
+# (03/16/2020 - 04/12/2020)
+Updates and changes.
+
+## Progress
+There has been much progress since the latest update. Sentry now has a new home page and our mongoDB has been updated to reflect user's stored passwords. We also made a few bug and error fixes since the last update.
+
+## [Sentry Repository](https://github.com/down-to-jam/sentry)
+
+## Pending Tasks
+UI/UX:
+- Add user management functionality on admin page
+- Create Privacy Policy page
+- Create password generator page (?)
+
+## Roles and Responsibilities
+
+### Trevin
+Completed:
+- Added home page with relevant information
+- Fix sizing issue with landing page logo
+- Added new property to user schema
+
+Current:
+- Password manager page
+
+TODO:
+- Add admin page functionality
+- Continue to update routing as new pages are posted
+
+### Dylan
+Completed:
+
+Current:
+
+TODO:
+
+
+### Jan
+Completed:
+
+
+Current:
+- Work on password listing after initialization
+
+TODO:
+- Help with any possible errors that occurs when pushing to github
