@@ -41,6 +41,7 @@ class Landing extends React.Component {
     const transparent={backgroundColor: 'transparent'};
     const text = {textAlign: 'center', fontSize: '18px'};
     const links = {textAlign: 'center'};
+    const logo = {width: '200px', height: '200px'};
     const { from } = this.props.location.state || { from: { pathname: `/${this.flag}home` } };
     // if correct authentication, redirect to page instead of login screen
     if (this.state.redirectToReferer) {
@@ -54,7 +55,7 @@ class Landing extends React.Component {
             <Grid textAlign="center" verticalAlign="middle" centered columns={1}>
               <Grid.Column>
                 {/* Need to Insert Company Logo later */}
-                <Image src='/images/sentry-white.png' size='200px' centered/>
+                <Image src='/images/sentry-white.png' centered style={logo}/>
                 {/* <Image src='/public/images/Sentrywall.jpg'/> */}
                 <Form onSubmit={this.handleSubmit}>
                   <Segment stacked style= {transparent} inverted size='large'>
