@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Header, Loader, Grid, Icon, Divider } from 'semantic-ui-react';
+import { Stuffs } from '/imports/api/stuff/Stuff';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 
@@ -19,7 +20,7 @@ class UserHome extends React.Component {
         <div className="connect-background">
           <div className="page-layer">
             <Container>
-              <Header as="h1" textAlign="center" inverted>Registered User Home Page</Header>
+              <Header as="h1" textAlign="center" inverted>Welcome to Sentry!</Header>
               <Divider/>
               <Grid container centered columns={3}>
                 <Grid.Row>
@@ -49,16 +50,17 @@ class UserHome extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 UserHome.propTypes = {
-  // profiles: PropTypes.array.isRequired,
+  stuff: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('StuffItem');
+  const subscription = Meteor.subscribe('Stuffs');
+  console.log(subscription);
   return {
-    // profiles: Profiles.find({}).fetch(),
-    ready: subscription.ready(),
+    stuff: Stuffs.find({}).fetch(),
+    ready: true,
   };
 })(UserHome);
