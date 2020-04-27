@@ -230,5 +230,5 @@ I believe that this project was fairly difficult as it gave us a lot more to thi
 
 ### [Sentry Repository](https://github.com/down-to-jam/sentry)
 ### [Sentry Documentation](https://github.com/down-to-jam/sentry/blob/master/Sentry%20Documentation%20(Release).pdf)
-### [Sentry Release](https://github.com/down-to-jam/sentry)
+### [Sentry Release](https://github.com/down-to-jam/sentry/releases/tag/1.0)
 ### [Sentry Wiki](https://github.com/down-to-jam/sentry/wiki/Sentry-Wiki)
