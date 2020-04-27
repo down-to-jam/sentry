@@ -12,6 +12,8 @@ import Signin from '../pages/Signin';
 import Signout from '../pages/Signout';
 import Signup from '../pages/Signup';
 import AddPassword from'../pages/AddStuff';
+import EditAccount from'../pages/EditStuff';
+import ListAccount from'../pages/ListStuff';
 import AdminHome from '../pages/AdminHome';
 import UserHome from'../pages/UserHome';
 
@@ -28,8 +30,10 @@ class App extends React.Component {
               <AdminProtectedRoute path="/adminhome" component={AdminHome}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <ProtectedRoute path="/addstuff" component={AddPassword}/>
+              <ProtectedRoute path="/liststuff" component={ListAccount}/>
+              <ProtectedRoute path="/editstuff/:_id" component={EditAccount}/>
               <Route path="/signup" component={Signup}/>
-              <Route path="/home" component={UserHome}/>
+              <Route path="/userhome" component={UserHome}/>
               <Route component={NotFound}/>
             </Switch>
             <Footer/>

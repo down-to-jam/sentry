@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
 import { Stuffs, StuffSchema } from '/imports/api/stuff/Stuff';
 import swal from 'sweetalert';
-import { AutoForm, ErrorsField, HiddenField, NumField, SelectField, SubmitField, TextField } from 'uniforms-semantic';
+import { AutoForm, ErrorsField, HiddenField, SubmitField, TextField } from 'uniforms-semantic';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
@@ -13,28 +13,31 @@ class EditStuff extends React.Component {
 
   /** On successful submit, insert the data. */
   submit(data) {
-    const { name, quantity, condition, _id } = data;
-    Stuffs.update(_id, { $set: { name, quantity, condition } }, (error) => (error ?
+    const { account, username, password, _id } = data;
+    Stuffs.update(_id, { $set: { account, username, password } }, (error) => (error ?
       swal('Error', error.message, 'error') :
       swal('Success', 'Item updated successfully', 'success')));
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
+    const transparent={backgroundColor: 'transparent'};
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
     return (
+      <div className="connect-background">
+        <div className="page-layer">
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Edit Stuff</Header>
+            <Header as="h1" textAlign="center" inverted>Edit Information</Header>
             <AutoForm schema={StuffSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
               <Segment>
-                <TextField name='name'/>
-                <NumField name='quantity' decimal={false}/>
-                <SelectField name='condition'/>
+                <TextField name='account'/>
+                <TextField name='username'/>
+                <TextField name='password'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' />
@@ -42,6 +45,8 @@ class EditStuff extends React.Component {
             </AutoForm>
           </Grid.Column>
         </Grid>
+        </div>
+      </div>
     );
   }
 }
@@ -59,6 +64,7 @@ export default withTracker(({ match }) => {
   const documentId = match.params._id;
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('Stuff');
+  console.log(documentId, match.params);
   return {
     doc: Stuffs.findOne(documentId),
     ready: subscription.ready(),

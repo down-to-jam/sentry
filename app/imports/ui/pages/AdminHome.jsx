@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Card, Header, Loader } from 'semantic-ui-react';
+import { Container, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 
@@ -16,35 +16,28 @@ class AdminHome extends React.Component {
   renderPage() {
     return (
       <div className="connect-background">
-        <div className="page-layer">
-          <Container>
-            <Header as="h1" textAlign="center" inverted>Registered Users</Header>
-            <Card.Group>
-              {this.props.positions.map((position, index)=> <PositionCardAdmin key={index} position={position}/>)}
-            </Card.Group>
-            <br></br>
-          </Container>
+          <div className="page-layer">
+            <Container>
+              <Header as="h1" textAlign="center" inverted>Welcome Administrator!</Header>
+            </Container>
+          </div>
         </div>
-      </div>
     );
   }
 }
 
 /** Require an array of Stuff documents in the props. */
 AdminHome.propTypes = {
-  profiles: PropTypes.array.isRequired,
-  positions: PropTypes.array.isRequired,
+  stuffs: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('ProfileAdmin');
-  const subscription2 = Meteor.subscribe('PositionAdmin');
+  const subscription = Meteor.subscribe('StuffItemAdmin');
   return {
-    profiles: Profiles.find({}).fetch(),
-    positions: Positions.find({}).fetch(),
-    ready: (subscription.ready() && subscription2.ready()),
+    stuffs: Stuffs.find({}).fetch(),
+    ready: subscription.ready(),
   };
 })(AdminHome);

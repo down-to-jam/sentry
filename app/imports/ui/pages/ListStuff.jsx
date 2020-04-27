@@ -11,20 +11,23 @@ class ListStuff extends React.Component {
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
+    const transparent={backgroundColor: 'transparent'};
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
+      <div className="connect-background">
+        <div className="page-layer">
         <Container>
-          <Header as="h2" textAlign="center">List Stuff</Header>
+          <Header as="h1" textAlign="center" inverted>Account List</Header>
           <Table celled>
             <Table.Header>
               <Table.Row>
-                <Table.HeaderCell>Name</Table.HeaderCell>
-                <Table.HeaderCell>Quantity</Table.HeaderCell>
-                <Table.HeaderCell>Condition</Table.HeaderCell>
+                <Table.HeaderCell>Account</Table.HeaderCell>
+                <Table.HeaderCell>Username</Table.HeaderCell>
+                <Table.HeaderCell>Password</Table.HeaderCell>
                 <Table.HeaderCell>Edit</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
@@ -33,6 +36,8 @@ class ListStuff extends React.Component {
             </Table.Body>
           </Table>
         </Container>
+        </div>
+      </div>  
     );
   }
 }
