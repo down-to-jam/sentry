@@ -166,3 +166,73 @@ Current:
 
 TODO:
 - Help with any possible errors that occurs when pushing to github
+
+# Release (04/12/2020 - 04/26/2020)
+Release notes and technical information.
+
+## Pending Tasks
+UI/UX:
+- Finalize admin page
+- Create Privacy Policy page
+- Create password generator page
+
+## Roles and Responsibilities
+
+### Trevin
+Completed:
+
+Current:
+
+TODO:
+
+### Dylan
+Completed:
+
+Current:
+
+TODO:
+
+
+### Jan
+Completed:
+
+Current:
+
+TODO:
+
+## Technical Notes
+
+### Installation and Use
+1. Clone the Sentry repository from Github
+- Use Github Desktop or the git command line tool to clone the repo at:
+    - ```git@github.com:down-to-jam/sentry.git```
+2. Install NodeJS
+- The latest version of NodeJS needs to be installed in order for this application to run.
+    - Find the latest version of NodeJS: https://nodejs.org/en/
+3. Install Meteor
+- The latest version of Meteor is required to run the application.
+    - The latest version of Meteor: https://www.meteor.com/install
+3. Navigate to the Sentry Application folder
+- On your computer, navigate to the location of the cloned Sentry repository in your command line application
+- CD into the "app" folder found at ```../sentry/app/```
+4. Install NodeJS application packages
+- Ensure NodeJS has been successfully installed
+- In the command line, type ```npm install``` in the Sentry "app" folder
+5. Run the Meteor application
+- In the command line, type ```meteor npm run start```
+6. Open the application in your browser
+- In your browser of choice, navigate to http://localhost:3000/
+- You will be met with the Sentry Home Page
+
+## Developer Notes
+
+### Trevin Tejero
+
+### Dylan Ubongen
+
+## Links
+
+### [Sentry Repository](https://github.com/down-to-jam/sentry)
+### [Sentry Documentation](https://github.com/down-to-jam/sentry)
+### [Sentry Release](https://github.com/down-to-jam/sentry)
+### [Sentry Wiki](https://github.com/down-to-jam/sentry)
