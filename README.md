@@ -187,7 +187,9 @@ Completed:
 ### Dylan
 Completed:
 - Wiki documentation
-
+- fixed up account editor
+- fixed up adding an account
+- fixed the page reroutes
 
 ### Jan
 Completed:
@@ -223,7 +225,7 @@ Completed:
 This project was probably one of the challenging projects I have worked on in a while. The Sentry project and idea itself was fairly straightforward, but there were a few challenges we had to overcome to get to where we are now. Even then, there is so much we would like to have done, but given the situation and contraints I am still happy with what we came up with. The situation with the current COVID-19 pandemic made working in general a lot harder, and the team dynamic became a challenge to overcome. There were other issues with timing and remote work, but those were not hard to transition into. First of all, I am proud that we were able to get a working prototype done and released. One of the best achievements was to see it come online for the first time after some initial challenges. Overall, I am a bit disappointed we were not able to complete the entire vision for the project, but we did come a decently long way.
 
 ### Dylan Ubongen
-
+I believe that this project was fairly difficult as it gave us a lot more to think about when developing an application. For example, when I was creating my first application for ICS 314, my initial thought was not whether or not this application was secured. Instead I thought more about the practicallity of the application and less on the backend security. I felt that my biggest concern for this project was the quarantine as I am not currently on the same island as my groupmates. Therefore, making this project harder to complete as the communication and usage of git is difficult to keep track of. I think that because of these hardships, it motivates me even more to learn and focus the security aspect of the application rather than the practicatllity because when it comes down to the logistics people rather have a app that is well secured than an app that is not secured but very useful.
 ## Links
 
 ### [Sentry Repository](https://github.com/down-to-jam/sentry)
