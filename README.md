@@ -180,25 +180,18 @@ UI/UX:
 
 ### Trevin
 Completed:
-
-Current:
-
-TODO:
+- Set up basic admin page
+- Wiki documentation
+- Code finalization
 
 ### Dylan
 Completed:
-
-Current:
-
-TODO:
+- Wiki documentation
 
 
 ### Jan
 Completed:
 
-Current:
-
-TODO:
 
 ## Technical Notes
 
@@ -227,6 +220,7 @@ TODO:
 ## Developer Notes
 
 ### Trevin Tejero
+This project was probably one of the challenging projects I have worked on in a while. The Sentry project and idea itself was fairly straightforward, but there were a few challenges we had to overcome to get to where we are now. Even then, there is so much we would like to have done, but given the situation and contraints I am still happy with what we came up with. The situation with the current COVID-19 pandemic made working in general a lot harder, and the team dynamic became a challenge to overcome. There were other issues with timing and remote work, but those were not hard to transition into. First of all, I am proud that we were able to get a working prototype done and released. One of the best achievements was to see it come online for the first time after some initial challenges. Overall, I am a bit disappointed we were not able to complete the entire vision for the project, but we did come a decently long way.
 
 ### Dylan Ubongen
 
@@ -235,4 +229,4 @@ TODO:
 ### [Sentry Repository](https://github.com/down-to-jam/sentry)
 ### [Sentry Documentation](https://github.com/down-to-jam/sentry)
 ### [Sentry Release](https://github.com/down-to-jam/sentry)
-### [Sentry Wiki](https://github.com/down-to-jam/sentry)
+### [Sentry Wiki](https://github.com/down-to-jam/sentry/wiki/Sentry-Wiki)
